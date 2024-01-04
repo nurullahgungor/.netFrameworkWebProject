@@ -1,0 +1,64 @@
+﻿@model List<WebApplication1.Models.Slider>
+
+@{
+    ViewBag.Title = "Home";
+}
+<div class="container mt-5">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            @foreach (var slider in Model)
+            {
+                <div class="carousel-item active">
+                    <img src="@slider.slider_url" alt="Slider Image" width="1360" height="800">
+                </div>
+            }
+            
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- Text Section-->
+<section class="page-section" id="contact">
+    <div class="container">
+        <!-- Text Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Ayva : Doğanın Tatlı Hediyesi</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Text Section Article-->
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+                <p>
+                    Doğanın cömert bir armağanı olan ayva, hem lezzeti hem de besleyici özellikleriyle öne çıkan bir meyvedir. Latince adı "Pyrus" olan bu meyve, gülgiller familyasına aittir. Anavatanı Güneydoğu Avrupa ve Güneybatı Asya olan ayva, zamanla dünyanın çeşitli bölgelerine yayılmış ve farklı iklimlerde yetişebilme özelliğiyle dikkat çekmiştir.
+                </p>
+                <p>
+                    Ayva ağacı, genellikle 4 ila 10 metre arasında boylanabilen, güzel beyaz çiçekleriyle bahçeleri süsleyen bir ağaçtır. Bu ağacın meyveleri genellikle sonbaharda olgunlaşır ve özel bir kokuya sahip olan ayva, birçok kültürde sofralarda sıklıkla yer alır.
+                </p>
+                <p>
+                    Ayva, yoğun bir şekilde C vitamini içerir ve lif bakımından zengindir. Ayrıca, potasyum, demir, magnezyum ve vitamin A gibi bir dizi besin öğesini içerir. Bu nedenle, ayva tüketimi vücut sağlığını desteklemek için önemli bir katkı sağlar.
+                </p>
+                <p>
+                    Ayva, genellikle taze olarak tüketilmesinin yanı sıra reçel, marmelat, komposto gibi birçok farklı şekilde de kullanılabilir. Özellikle kış aylarında hastalıklardan korunmak amacıyla ayva tüketimi, doğal şeker içeriği ve yüksek antioksidanlarla bağışıklık sistemini güçlendirmeye yardımcı olabilir.
+                </p>
+                <p>
+                    Aynı zamanda, ayva lezzetiyle de öne çıkar. Hafif tatlı ve hafif ekşi bir lezzete sahip olan ayva, çeşitli yemek tariflerinde kullanılarak sofralara renk katar. Ayva tatlıları, ayva reçeli ve ayva çayı gibi geleneksel tarifler, bu eşsiz meyvenin farklı şekillerde değerlendirilmesine olanak tanır.
+                </p>
+                <p>
+                    Sonuç olarak, ayva sadece bir meyve değil, aynı zamanda sağlıklı bir yaşam tarzını destekleyen bir besindir. Hem sağlık hem de lezzet dolu bir deneyim sunan ayva, sofralarımızı zenginleştiren doğanın güzel hediyelerinden biridir.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,56 @@
+﻿@model WebApplication1.Models.cityGraph
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>cityGraph</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.sehir_adi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sehir_adi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sehir_veri_1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sehir_veri_1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sehir_veri_2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sehir_veri_2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sehir_veri_3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sehir_veri_3)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

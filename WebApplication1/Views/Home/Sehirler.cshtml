@@ -1,0 +1,19 @@
+﻿@model List<WebApplication1.Models.cityGraph>
+@{
+    ViewBag.Title = "Sehirler";
+}
+<style>
+    th {
+        background-color: #f2f2f2; /* Başlık satırı dolgu rengi */
+    }
+</style>
+<div class="container mt-5 text-center">
+    <table class="table">
+            @foreach (var city in Model)
+            {
+                <tr>
+                    <td>@city.sehir_adi</td>
+                </tr>
+            }
+    </table>
+</div>

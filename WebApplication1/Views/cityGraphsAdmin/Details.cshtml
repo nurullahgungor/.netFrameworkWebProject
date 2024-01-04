@@ -1,0 +1,50 @@
+﻿@model WebApplication1.Models.cityGraph
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>cityGraph</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.sehir_adi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sehir_adi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sehir_veri_1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sehir_veri_1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sehir_veri_2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sehir_veri_2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sehir_veri_3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sehir_veri_3)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

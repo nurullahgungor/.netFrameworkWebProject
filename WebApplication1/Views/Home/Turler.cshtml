@@ -1,0 +1,27 @@
+﻿@model IEnumerable<WebApplication1.Models.Turler>
+
+@{
+    ViewBag.Title = "Turler";
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.tur_adi)
+        </th>
+        <th></th>
+    </tr>
+    
+    @foreach (var item in  Model)
+    {
+        <tr>
+            <td>
+                
+                @Html.DisplayFor(modelItem => item.tur_adi)
+                
+            </td>
+        </tr>
+    }
+   
+
+</table>
